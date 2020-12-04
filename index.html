@@ -6,26 +6,26 @@
 	  	<link rel="icon" href="https://gamepedia.cursecdn.com/minecraft_gamepedia/a/a7/Heart.svg?version=dac1a46352ab4c25ad78a3cef0ceea86">
 	  	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	  	<style type="text/css">
-/** Regular */
+
 @font-face {
   font-family: "SF Display";
   font-weight: 400;
   src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
 }
-/** Semibold */
+
 @font-face {
   font-family: "SF Display";
   font-weight: 600;
   src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
 }
 
-/** Thin */
+
 @font-face {
   font-family: "SF Display";
   font-weight: 300;
   src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
 }
-/** Bold */
+
 @font-face {
   font-family: "SF Display";
   font-weight: 700;
@@ -176,7 +176,7 @@
 	  	}
 	  	.mytext:focus{
 	  		border: 3px solid rgba(10,107,254,0.5);
-	  		/*transform: translateY(-2px);*/
+	  		
 	  	}
 	  	.mytext:hover{
 	  		cursor: text;
@@ -485,15 +485,10 @@
 				<div class="myresize"></div>
 			</div>
 		</div>
-		<span style="position: absolute; text-align: center; line-height: 100vh; width: 100vw; z-index:-10;">jangan dijual bos</span>
+		<span style="position: absolute; text-align: center; line-height: 100vh; width: 100vw; z-index:-10;">:/</span>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	  	<script type="text/javascript">
-	  		/*
-			referensi
-	  		https://www.w3schools.com/howto/howto_js_draggable.asp
-	  		https://stackoverflow.com/questions/2310734/how-to-make-html-text-unselectable
-	  		http://stackoverflow.com/questions/8960193/how-to-make-html-element-resizable-using-pure-javascript/33523184
-	  		*/
+
 	  		namaku=localStorage.getItem("nama");
 			blur="true"; 
 			$(window).on('load',function(){
@@ -582,11 +577,11 @@
 			function openFullscreen() {
 			  if (elem.requestFullscreen) {
 			    elem.requestFullscreen();
-			  } else if (elem.mozRequestFullScreen) { /* Firefox */
+			  } else if (elem.mozRequestFullScreen) {
 			    elem.mozRequestFullScreen();
-			  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+			  } else if (elem.webkitRequestFullscreen) {
 			    elem.webkitRequestFullscreen();
-			  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+			  } else if (elem.msRequestFullscreen) { 
 			    elem.msRequestFullscreen();
 			  }
 			}
@@ -756,14 +751,14 @@
 				$(".ucapan").append('<span id="spannama2"></span>');
 				var today = new Date();
 				var h = today.getHours();
-				if(h>23)tulis('malam','seharusnya kamu sudah tidur');
-				else if(h>19)tulis('malam','waktunya mengisi energi');
-				else if(h>18)tulis('petang','selamat menikmati senja');
-				else if(h>14)tulis('sore','selamat menjalani hari');
-				else if(h>13)tulis('siang','tetap semangat')
-				else if(h>9)tulis('siang','selamat bekerja')
-				else if(h>4)tulis('pagi','selamat beraktivitas');
-				else tulis('malam','seharusnya kamu sudah tidur');
+				if(h>23)tulis('Malam','seharusnya kamu sudah tidur <3');
+				else if(h>19)tulis('Malam','waktunya mengisi energi <3');
+				else if(h>18)tulis('Petang','selamat menikmati senja <3');
+				else if(h>14)tulis('Sore','selamat menjalani hari <3');
+				else if(h>13)tulis('Siang','tetap semangat <3')
+				else if(h>9)tulis('Siang','selamat bekerja <3')
+				else if(h>4)tulis('Pagi','selamat beraktivitas <3');
+				else tulis('Malam','seharusnya kamu sudah tidur <3');
 				selesai=true;
 			}
 			function resetposisi(){
@@ -796,14 +791,14 @@
 				var t = setTimeout(startTime, 500);
 				mytanggal();
 				if(cari){
-					if(h>23)tulis('malam','seharusnya kamu sudah tidur');
-					else if(h>18)tulis('malam','waktunya mengisi energi');
-					else if(h>17)tulis('petang','selamat menikmati senja');
-					else if(h>14)tulis('sore','selamat menjalani hari');
-					else if(h>13)tulis('siang','tetap semangat')
-					else if(h>9)tulis('siang','selamat bekerja')
-					else if(h>4)tulis('pagi','selamat beraktivitas');
-					else tulis('malam','seharusnya kamu sudah tidur');
+					if(h>23)tulis('Malam','seharusnya kamu sudah tidur <3');
+					else if(h>18)tulis('Malam','waktunya mengisi energi <3');
+					else if(h>17)tulis('Petang','selamat menikmati senja <3');
+					else if(h>14)tulis('Sore','selamat menjalani hari <3');
+					else if(h>13)tulis('Siang','tetap semangat <3')
+					else if(h>9)tulis('Siang','selamat bekerja <3')
+					else if(h>4)tulis('Pagi','selamat beraktivitas <3');
+					else tulis('Malam','seharusnya kamu sudah tidur <3');
 					if(h>18)     document.querySelector('img').src="wp1.png";
 					else if(h>4) document.querySelector('img').src="wp2.png";
 					else         document.querySelector('img').src="wp1.png";
@@ -827,11 +822,11 @@
 				fs=true;
 				if (elem.requestFullscreen) {
 					elem.requestFullscreen();
-				} else if (elem.mozRequestFullScreen) { /* Firefox */
+				} else if (elem.mozRequestFullScreen) {
 					elem.mozRequestFullScreen();
-				} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+				} else if (elem.webkitRequestFullscreen) { 
 					elem.webkitRequestFullscreen();
-				} else if (elem.msRequestFullscreen) { /* IE/Edge */
+				} else if (elem.msRequestFullscreen) { 
 					elem.msRequestFullscreen();
 				}
 			}
